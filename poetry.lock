@@ -182,6 +182,17 @@ files = [
 ]
 
 [[package]]
+name = "config"
+version = "0.5.1"
+description = "A hierarchical, easy-to-use, powerful configuration module for Python"
+optional = false
+python-versions = "*"
+files = [
+    {file = "config-0.5.1-py2.py3-none-any.whl", hash = "sha256:79ffa009ff2663cc8ca29e56bcec031c044609d4bafaa4f884132a413101ce84"},
+    {file = "config-0.5.1.zip", hash = "sha256:2dd4a03aa383d30711d5a3325a1858de225328d61950a85be5b74c100f63016d"},
+]
+
+[[package]]
 name = "coverage"
 version = "7.6.1"
 description = "Code coverage measurement for Python"
@@ -856,4 +867,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "6bac1a65b4398b1022df001d525028aaa5fc0a344caa75dbbf8137eeab04046c"
+content-hash = "16f8fb4bb1105ada05654852fbddc3b501b3572965bc21457341885f8abb9208"

@@ -1,7 +1,7 @@
 import psycopg2
 
 from config import config
-from src.abstract_classes import CreatorDB
+from src.abstracts import CreatorDB
 
 
 class DBCreator(CreatorDB):
@@ -61,4 +61,3 @@ class DBCreator(CreatorDB):
         finally:
             cur.close()
             conn.close()
-
