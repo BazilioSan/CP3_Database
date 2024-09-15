@@ -24,6 +24,10 @@ git clone github.com/BazilioSan/Sky_pro_BazilioSan.git
 2. Установите зависимости:
 ```
 pip install -r requirements.txt
+
+3. Установите параметры доступа:
+```
+в модуль database.ini требуется прописать пароль доступа. 
 ```
 ## Использование:
 
