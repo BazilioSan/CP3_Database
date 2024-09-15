@@ -19,3 +19,4 @@ class DataBase(ABC):
     @abstractmethod
     def db_connect(self) -> None:
         pass
+

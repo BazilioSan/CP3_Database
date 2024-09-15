@@ -61,6 +61,7 @@ class DBManager(DataBase):
     def get_vacancies_with_higher_salary(self) -> list[tuple]:
         """Метод возвращает выборку по вакансиям, у которых зарплата выше средней по вакансиям.
         В выборке присутствуют столбцы: название компании, название вакансии, зарплата, сылка на вакансию."""
+
         self.db_connect()
         cur = self.conn.cursor()
         sql = """SELECT company_name, vacancy_name, salary, link
@@ -77,6 +78,7 @@ class DBManager(DataBase):
     def get_vacancies_with_keyword(self, keyword: str) -> list[tuple]:
         """Метод возвращает выборку по вакансиям, у которых присутствует ключевое слово в названии.
         В выборке присутствуют столбцы: название компании, название вакансии, зарплата, сылка на вакансию."""
+
         self.db_connect()
         cur = self.conn.cursor()
         sql = f"""SELECT company_name, vacancy_name, salary, link

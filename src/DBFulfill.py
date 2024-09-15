@@ -60,3 +60,4 @@ class DBFiller(DataBase):
         finally:
             cur.close()
             self.conn.close()
+

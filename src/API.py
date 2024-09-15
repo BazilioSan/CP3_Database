@@ -32,6 +32,7 @@ class HH(Parser):
     def load_vacancies(self, id: list[Any]) -> None:
         """Метод загружает вакансии с сервиса HH. Формирует из загруженных данных список объектов
         вакансий с полями: название, ссылка, зарплата, описание, требования, место."""
+
         self.params["employer_id"] = id
         while self.params.get("page") != 20:
             response = requests.get(self.url, headers=self.headers, params=self.params)
